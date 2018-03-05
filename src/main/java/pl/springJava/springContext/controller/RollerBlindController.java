@@ -5,12 +5,18 @@ import pl.springJava.springContext.weather.WeatherStation;
 
 @Component
 public class RollerBlindController implements Controller{
+    private WeatherStation weather;
+
+    public RollerBlindController(WeatherStation weather) {
+        this.weather = weather;
+    }
 
     @Override
-    public void infoController(WeatherStation weather) {
-        if (weather.getWeather().equals("słonecznie"))
+    public void infoController() {
+        if (weather.getWeather().equals("słonecznie")) {
             System.out.println("Jest słonecznie. Zasłaniam rolety ");
-        else
+        }else {
             System.out.println("Jest pochmurno. Nie zasłaniam rolet ");
+        }
     }
 }

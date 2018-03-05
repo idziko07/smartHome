@@ -11,12 +11,13 @@ public class WeatherStation {
     public WeatherStation() {
         System.out.println("Stacja pogodowa pobiera informacje o temperaturze.");
         Random random = new Random();
-        this.temperature = random.nextInt(60)-25;
+        this.temperature = random.nextInt(61)-25;
 
-        if(random.nextBoolean())
+        if(random.nextBoolean()) {
             this.weather = "słonecznie";
-        else
+        }else {
             this.weather = "pochmurno";
+        }
     }
 
     public int getTemperature() {

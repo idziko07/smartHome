@@ -4,5 +4,5 @@ import pl.springJava.springContext.weather.WeatherStation;
 
 public interface Controller {
 
-    void infoController(WeatherStation weather);
+    void infoController();
 }
