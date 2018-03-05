@@ -9,6 +9,6 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         SmartHome smartHome = context.getBean(SmartHome.class);
-        smartHome.runController();
+       // smartHome.runController();
     }
 }

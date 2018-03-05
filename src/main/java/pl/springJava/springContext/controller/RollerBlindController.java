@@ -3,16 +3,12 @@ package pl.springJava.springContext.controller;
 import org.springframework.stereotype.Component;
 import pl.springJava.springContext.weather.WeatherStation;
 
-@Component
+//@Component
 public class RollerBlindController implements Controller{
-    private WeatherStation weather;
 
-    public RollerBlindController(WeatherStation weather) {
-        this.weather = weather;
-    }
 
     @Override
-    public void infoController() {
+    public void infoController(WeatherStation weather) {
         if (weather.getWeather().equals("słonecznie")) {
             System.out.println("Jest słonecznie. Zasłaniam rolety ");
         }else {

@@ -3,7 +3,7 @@ package pl.springJava.springContext.weather;
 import org.springframework.stereotype.Component;
 
 import java.util.Random;
-@Component
+//@Component
 public class WeatherStation {
     private int temperature;
     private String weather;
